@@ -7,7 +7,7 @@
 - Please run from the top cell in order.
 
 # Copyright and licensing information
--MIT License
+- MIT License
 
 # Contact information
 - Name: 김태환
