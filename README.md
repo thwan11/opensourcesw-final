@@ -1,7 +1,7 @@
 # opensourcesw-final
 
 # Configuration instructions
-## I used VotingClassifier with...
+## I used Voting Classifier with...
 1. KNN
 2. SVM
 3. SVM
