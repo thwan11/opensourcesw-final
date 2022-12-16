@@ -18,26 +18,26 @@ svc_clf4 = SVC(kernel='rbf', C=10, coef0=10,degree=11,gamma=1.8,probability=True
 3. Extra Trees
 ```python
 from sklearn.ensemble import ExtraTreesClassifier
-xtree_clf1 = ExtraTreesClassifier(n_estimators=3, random_state=1898,criterion='entropy')
-xtree_clf2 = ExtraTreesClassifier(n_estimators=3, random_state=7567,criterion='entropy')
-xtree_clf3 = ExtraTreesClassifier(n_estimators=3, random_state=9244,criterion='entropy')
-xtree_clf4 = ExtraTreesClassifier(n_estimators=3, random_state=5147,criterion='entropy')
-xtree_clf5 = ExtraTreesClassifier(n_estimators=3, random_state=6161,criterion='entropy')
+xtc_clf1 = ExtraTreesClassifier(n_estimators=3, random_state=1898,criterion='entropy')
+xtc_clf2 = ExtraTreesClassifier(n_estimators=3, random_state=7567,criterion='entropy')
+xtc_clf3 = ExtraTreesClassifier(n_estimators=3, random_state=9244,criterion='entropy')
+xtc_clf4 = ExtraTreesClassifier(n_estimators=3, random_state=5147,criterion='entropy')
+xtc_clf5 = ExtraTreesClassifier(n_estimators=3, random_state=6161,criterion='entropy')
 ```
 4. Voting
 ```python
 from sklearn.ensemble import VotingClassifier
 vote = VotingClassifier(estimators=[
                                     ('KNN1',knn_clf1),
-                                    ('svc1',svc_clf1),
-                                    ('svc2',svc_clf2),
-                                    ('svc3',svc_clf3),
-                                    ('svc4',svc_clf4),
-                                    ('XTree1',xtree_clf1),
-                                    ('XTree2',xtree_clf2),
-                                    ('XTree3',xtree_clf3),
-                                    ('XTree4',xtree_clf4),
-                                    ('XTree5',xtree_clf5),
+                                    ('SVC1',svc_clf1),
+                                    ('SVC2',svc_clf2),
+                                    ('SVC3',svc_clf3),
+                                    ('SVC4',svc_clf4),
+                                    ('XTC1',xtc_clf1),
+                                    ('XTC2',xtc_clf2),
+                                    ('XTC3',xtc_clf3),
+                                    ('XTC4',xtc_clf4),
+                                    ('XTC5',xtc_clf5),
                                    ])
 ```
 
@@ -46,7 +46,7 @@ vote = VotingClassifier(estimators=[
 - I uploaded .pkl file. Please run the file.
 ```python
 import pickle
-with open('./round_3.pkl',"rb") as fr:
+with open('./round3.pkl',"rb") as fr:
     model = pickle.load(fr)
 y_pred = model.predict(X_test)
 ```
