@@ -43,6 +43,13 @@ vote = VotingClassifier(estimators=[
 
 # Operating instructions
 - Please run from the top cell in order.
+- I uploaded .pkl file. Please run the file.
+```python
+import pickle
+with open('./round_3.pkl',"rb") as fr:
+    model = pickle.load(fr)
+y_pred = model.predict(X_test)
+```
 
 # Copyright and licensing information
 - MIT License
