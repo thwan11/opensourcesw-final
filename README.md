@@ -1,7 +1,7 @@
 # opensourcesw-final
 
-# Configuration instructions
-## I used Voting Classifier with...
+## Configuration instructions
+### I used Voting Classifier with...
 1. KNN
 ```python
 from sklearn.neighbors import KNeighborsClassifier
@@ -41,7 +41,7 @@ vote = VotingClassifier(estimators=[
                                    ])
 ```
 
-# Operating instructions
+## Operating instructions
 - Please run from the top cell in order.
 - I uploaded .pkl file. Please run the file.
 ```python
@@ -51,10 +51,10 @@ with open('./round_3.pkl',"rb") as fr:
 y_pred = model.predict(X_test)
 ```
 
-# Copyright and licensing information
+## Copyright and licensing information
 - MIT License
 
-# Contact information
+## Contact information
 - Name: 김태환
 - Student ID: 20225126
 - E-mail: dmkthwan11@gmail.com
