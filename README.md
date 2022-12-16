@@ -43,7 +43,6 @@ vote = VotingClassifier(estimators=[
 
 ## Operating instructions
 - Please run from the top cell in order.
-<rb>
 - I uploaded .pkl file. Please run the file.
 ```python
 import pickle
