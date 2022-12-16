@@ -3,6 +3,9 @@
 # Configuration instructions
 ## I used Voting Classifier with...
 1. KNN
+```python
+knn_clf1 = KNeighborsClassifier(n_neighbors=1)
+```
 2. SVM
 3. SVM
 4. SVM
